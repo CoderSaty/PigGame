@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="assests/css/style.css">
+    <title>Pig Game</title>
+</head>
+
+<body>
+    <!-- Whole Panel -->
+    <div class="wrapper clearfix">
+        <!-- Player 1 -->
+        <div class="player-0-panel active">
+            <div class="player-name" id="name-0">Player 1</div>
+            <div class="player-score" id="score-0">43</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-0">11</div>
+            </div>
+        </div>
+        <!-- Player 2 -->
+        <div class="player-1-panel">
+            <div class="player-name" id="name-1">Player 2</div>
+            <div class="player-score" id="score-1">72</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+        </div>
+        <!-- Game Controls -->
+        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+        <button class="btn-rule" id="myBtn"><i class="ion-ios-book-outline"></i>Rules</button>
+        <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button> <input type="text"
+            placeholder="Final score" class="final-score">
+        <!-- Dices -->
+        <img src="assests/images/dice-5.png" alt="Dice" class="dice" id="dice-1">
+        <!-- <img src="assests/images/dice-5.png" alt="Dice" class="dice" id="dice-2"> -->
+    </div>
+    <!-- Game Rule Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>GAME RULES:</h1>
+            <br>
+            <ul>
+                <li>The game has 2 players, playing in rounds.</li>
+                <br>
+                <li>In each turn, a player rolls a dice as many times as he whishes. Each result get added to his
+                    current ROUND score.</li>
+                <br>
+                <li>BUT, if the player rolls a 1, all his current ROUND score gets lost. After that, it's the next
+                    player's turn</li>
+                <br>
+                <li> The player can choose to 'Hold', which means that his current ROUND score gets added to his GLOBAL
+                    score. After that, it's the next player's turn</li>
+                <br>
+                <li>The first player to reach 100 points on GLOBAL score wins the game
+                </li>
+                <br>
+                <li>This game is famously known as <b>PigGame</b></li>
+                <br>
+            </ul>
+            <h1>ADDITIONAL FEATURES:</h1>
+            <br>
+            <ul>
+                <li>A player looses his ENTIRE score when he rolls two 6 in a row. After that, it's the next player's
+                    turn.</li>
+                <br>
+                <li>There will be an input field where players can set their own winning score, so that they can change
+                    the predefined score of 100.</li>
+                <br>
+                <li>Add another dice to the game, so that there are two dices now. The player looses his current score
+                    when one of them is a 1.</li>
+                <br>
+            </ul>
+        </div>
+    </div>
+    <!-- One Dice game Script -->
+    <script src="assests/js/app.js"></script>
+    <!-- Two Dice Game Script -->
+    <!-- <script src="challenges.js"></script> -->
+</body>
+
+</html>
