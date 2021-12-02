@@ -22,7 +22,6 @@
 - [Features](#Features)
 - [References](#references)
 - [License](#license)
-- [ToDos](#To-Dos)
 - [Related Projects](#related-projects)
 - [Support](#support)
 - [Author Info](#author-info)
@@ -89,19 +88,12 @@ I have used the following resources in creation of this project:
 
 Copyright (c) 2021 @[codersaty](http://codersaty.github.io/Portfolio)
 
-<br/>
-
-# To Dos
-
-> Thinking About it.
-
 
 <br/>
 
 # Related Projects
 
-
-> I will add the projects soon.
+- Level Zero Portfolio [Live Demo](https://codersaty.netlify.app/) [Github](https://github.com/CoderSaty/LevelZeroPortfolio)
 
 
 <br/>
